@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<script>
+  $(document).ready(function() {
+    $('#carouselExampleIndicators').carousel({
+      interval: 3000 // Time interval between slides in milliseconds
+    });
+  });
+</script>
+  <!-- Carousel section -->
+  
+  
+
+  <!-- Benefits section -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Get Your Food to Go!</h2>
+        <p class="lead">Our website is dedicated to helping college students get the food they want, without the hassle of waiting in line. Our takeout system allows students to place their order online, and pick it up at their convenience.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static '/img/coffee1.jpeg' %}" alt="Get Your Food to Go!" class="img-fluid rounded">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{% static '/img/coffee4.jpeg' %}" alt="Convenient Payment" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Convenient Payment</h2>
+        <p class="lead">We offer a variety of payment options, including credit/debit cards and mobile payments. Our system is secure, fast, and easy to use.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Quick and Easy</h2>
+        <p class="lead">Our website is designed to be simple and easy to use. Just choose your food, place your order, and pick it up at your convenience. No more waiting in long lines!</p>
+      </div>
+    </div>
+    </div>
+<!-- Third session -->
+<section class="py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-primary mb-4">How it works</h2>
+        <p class="mb-4">Our website makes it easy for students to order their favorite meals and snacks from our cafe for takeout. Simply browse our menu, select the items you want, and add them to your cart. You can also specify any dietary preferences or allergies you have. Then, choose a pickup time that works for you and pay online. Your order will be ready for pickup at the designated time, so you can quickly grab your food and go.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'static/students/images/how-it-works.jpeg' %}" alt="How it works" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fourth session -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{% static 'static/students/images/benefits.jpeg' %}" alt="Benefits" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary mb-4">Benefits of using our website</h2>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="fas fa-check text-success me-3"></i>Easy and convenient ordering</li>
+          <li class="mb-3"><i class="fas fa-check text-success me-3"></i>Customizable options for dietary preferences and allergies</li>
+          <li class="mb-3"><i class="fas fa-check text-success me-3"></i>Quick and efficient pickup process</li>
+          <li class="mb-3"><i class="fas fa-check text-success me-3"></i>No waiting in long lines</li>
+          <li class="mb-3"><i class="fas fa-check text-success me-3"></i>Ability to place orders ahead of time</li>
+          <li><i class="fas fa-check text-success me-3"></i>Free up more time for studying and other activities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fifth session -->
+<section class="py-5 bg-body-tertiary">
+  <div class="container">
+    <h2 class="text-primary mb-4">Our Story</h2>
+    <p class="mb-4">At Grab n Go, we believe that every student deserves a delicious and convenient meal, no matter how busy their schedule may be. That's why we created this website to make it easier for students to order and pick up their favorite meals and snacks from our cafe. Our goal is to help students save time and stress less, so they can focus on what really matters - their education and their future.</p>
+    <p class="mb-4">We are passionate about serving high-quality food that is fresh, tasty, and healthy. We source our ingredients from local farmers and suppliers whenever possible, and we are committed to using sustainable and eco-friendly practices in our operations.</p>
+    <p>Thank you for choosing Grab n Go, and we hope you enjoy our food as much as we enjoy making it!</p>
+  </div>
+</section>
+{% endblock %}

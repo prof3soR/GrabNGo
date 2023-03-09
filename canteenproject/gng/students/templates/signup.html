@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+
+.register-form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.form-row input[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-row input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+h2{
+    margin: 3rem;
+}
+</style>
+
+<form method="post" class="register-form">
+    <h2>Welcome to MVGR's GRAB n GO</h2><br>
+    <h3>Registion Page</h3>
+    <p>Please enter the following details</p>
+    {% csrf_token %}
+    <div class="form-row">
+        
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="text" id="registration_number" name="registration_number" placeholder="Registration Number" required>
+    </div>
+    <div class="form-row">
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+    </div>
+    <div class="form-row">
+      <input type="text" id="mobile_number" name="mobile_number" placeholder="Mobile Number" required>
+    </div>
+    <input type="submit" value="Register">
+  </form>
+  
+
+
+
+{% endblock content %}
